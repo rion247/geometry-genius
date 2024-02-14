@@ -35,7 +35,6 @@
 
 </head>
 
-
 <body class="font-inter container mx-auto">
 
     <header>
@@ -44,10 +43,10 @@
 
             <div class="navbar-start">
                 <a>
-                    
+
                     <h4 class="font-bold text-[45px] text-main-logo-text-color">Interactive</h4>
                     <h6 class="font-medium text-3xl text-secondary-logo-text-color">Geometry Genius</h6>
-                
+
                 </a>
             </div>
 
@@ -59,22 +58,238 @@
 
     </header>
 
-    <main>
+    <main class="mb-20">
 
+        <div class="flex justify-between gap-x-6">
 
+            <!-- div 01  -->
+            <div class="grid grid-cols-3 gap-6">
 
+                <!-- item - 01: Calculate Triangle Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/triangle.png" alt="...Loading" /></figure>
 
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Triangle</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = 0.5 x b x h</p>
 
-    </main>
+                        <div class="flex justify-between items-center">
 
-    <footer>
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
 
-    </footer>
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="h">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
 
+                        </div>
 
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="triangleAreaFunction()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item - 02: Calculate Rectangle Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/rectangle.png" alt="...Loading" /></figure>
+
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Rectangle</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = w x l</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="w">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
+
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="l">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
+
+                        </div>
+
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="rectangleArea()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item - 03: Calculate Parallelogram Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/parallelogram.png" alt="...Loading" /></figure>
+
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Parallelogram</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = b x h</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
+
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="h">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
+
+                        </div>
+
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="parallelogramArea()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item - 04: Calculate Rhombus Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/rhombus.png" alt="...Loading" /></figure>
+
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Rhombus</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+                        <div class="flex justify-between items-center">
+
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d1">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
+
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d2">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
+
+                        </div>
+
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="rhombusArea()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item - 05: Calculate Pentagon Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/pentagon.png" alt="...Loading" /></figure>
+
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Pentagon</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = 0.5 x p x b</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="p">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
+
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
+
+                        </div>
+
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="pentagonArea()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item - 06: Calculate Ellipse Area  -->
+                <div class="w-96 px-11 py-12 border border-[#1111111a] rounded-lg">
+                    <figure class="flex justify-center"><img class="w-64 h-48" src="images/ellipse.png" alt="...Loading" /></figure>
+
+                    <div class=" mt-12 text-center text-[#414141]">
+                        <h2 class="text-2xl leading-7 font-bold">Ellipse</h2>
+                        <p class="mt-3 mb-6 text-base font-normal leading-5">Area(A) = &#x3C0;ab</p>
+
+                        <div class="flex justify-between items-center">
+
+                            <div class="flex items-center">
+                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="a">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>
+
+                            <div  class="flex items-center">
+                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <h6 class="text-base font-normal leading-5">cm</h6>
+                            </div>                            
+
+                        </div>
+
+                        <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
+                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                        </div>
+
+                        <div onclick="ellipseArea()" id="button" class="card-actions justify-center">
+                            <button
+                                class="btn w-full bg-button-color text-center text-xl font-bold text-white leading-6 mt-14">Calculate</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- div 02  -->
+            <div class="border border-[#1111111a] rounded-lg flex-1">
+
+                <h4 class="text-[#111111] font-bold text-xl leading-7 text-center underline mt-8">Area Calculation</h6>
+
+            </div>
+
+        </div>
+
+    </main> 
 
     <!-- external javascript file linked  -->
-    <script src="javascript/script.js"></script>
+    <script src="javascript/triangleArea.js"></script>
 
 </body>
 
