@@ -146,19 +146,19 @@
                         <div class="flex justify-between items-center">
 
                             <div class="flex items-center">
-                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <input id="parallelogram-b-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>
 
                             <div  class="flex items-center">
-                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="h">
+                                <input id="parallelogram-h-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="h">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>                            
 
                         </div>
 
                         <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
-                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                            <h6>Area : <span id="parallelogram-result-output">0</span> cm<sup>2</sup></h6>
                         </div>
 
                         <div onclick="parallelogramArea()" id="button" class="card-actions justify-center">
@@ -181,19 +181,19 @@
                         <div class="flex justify-between items-center">
 
                             <div class="flex items-center">
-                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d1">
+                                <input id="rhombus-d1-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d1">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>
 
                             <div  class="flex items-center">
-                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d2">
+                                <input id="rhombus-d2-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="d2">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>                            
 
                         </div>
 
                         <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
-                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                            <h6>Area : <span id="rhombus-result-output">0</span> cm<sup>2</sup></h6>
                         </div>
 
                         <div onclick="rhombusArea()" id="button" class="card-actions justify-center">
@@ -216,19 +216,19 @@
                         <div class="flex justify-between items-center">
 
                             <div class="flex items-center">
-                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="p">
+                                <input id="pentagon-p-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="p">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>
 
                             <div  class="flex items-center">
-                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <input id="pentagon-b-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>                            
 
                         </div>
 
                         <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
-                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                            <h6>Area : <span id="pentagon-result-output">0</span> cm<sup>2</sup></h6>
                         </div>
 
                         <div onclick="pentagonArea()" id="button" class="card-actions justify-center">
@@ -251,19 +251,19 @@
                         <div class="flex justify-between items-center">
 
                             <div class="flex items-center">
-                                <input id="first-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="a">
+                                <input id="ellipse-a-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="a">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>
 
                             <div  class="flex items-center">
-                                <input id="second-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
+                                <input id="ellipse-b-value" class="w-24 h-8 rounded bg-[#f1f1f1] px-3 py-2 mr-2" type="text" placeholder="b">
                                 <h6 class="text-base font-normal leading-5">cm</h6>
                             </div>                            
 
                         </div>
 
                         <div class="text-base font-normal leading-5 text-start text-[#414141] mt-12">
-                            <h6>Area : <span id="result-output">0</span> cm<sup>2</sup></h6>
+                            <h6>Area : <span id="ellipse-result-output">0</span> cm<sup>2</sup></h6>
                         </div>
 
                         <div onclick="ellipseArea()" id="button" class="card-actions justify-center">
@@ -289,9 +289,20 @@
     </main> 
 
     <!-- external javascript file linked  -->
+
+    <script src="javascript/commonfunction.js"></script>
+
     <script src="javascript/triangleArea.js"></script>
 
     <script src="javascript/rectangleArea.js"></script>
+
+    <script src="javascript/parallelogramArea.js"></script>
+
+    <script src="javascript/rhombusArea.js"></script>
+
+    <script src="javascript/pentagonArea.js"></script>
+
+    <script src="javascript/ellipseArea.js"></script>
 
 </body>
 
